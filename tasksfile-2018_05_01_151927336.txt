@@ -1,0 +1,18 @@
+#DESCRIPTION#Edits 082 and swaps to 092
+DELETE	082	Fic	0	False	False	False	False
+REPLACE	(=082.*\$a.*)\$2.*	$1	2		0
+REPLACE	(=082.*\$a.*)\$a.*	$1	2		0
+REPLACE	(=082.*)/.*	$1	2		0
+REPLACE	(=082.*)/.*	$1	2		0
+REPLACE	(=082.*)/.*	$1	2		0
+REPLACE	(=082.*)/.*	$1	2		0
+REPLACE	(=082.*)/.*	$1	2		0
+REPLACE	(=082.*)/.*	$1	2		0
+SWAP	082		a		092		z	0	2	1		0	0	0
+REPLACE	(=092.*\$aJ 920)\$z.*	$1	2		0
+REPLACE	(=092.*\$aJ 921)\$z.*	$1	2		0
+REPLACE	(=092.*\$aJ E)\$z.*	$1	2		0
+REPLACE	(=092.*\$aJ Fic)\$z.*	$1	2		0
+SUBFIELD_EDIT	092	z	^b	J	0|0
+REPLACE	(=092.*\$a).*\$z(.*)	$1$2	2		0
+REPLACE	=092  \\$aJ 	=092  \\$aJ	0		0

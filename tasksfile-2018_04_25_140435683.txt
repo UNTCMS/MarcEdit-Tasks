@@ -1,0 +1,5 @@
+#DESCRIPTION#020 edits specific to JLG
+REPLACE	(=020.*)\s:\$c.*	$1	2		0
+REPLACE	(=020.*)\s;	$1	2		0
+REPLACE	(=020.*\(.*\s):\s	$1;$q	2		0
+REPLACE	(=020.*)\s(\(.*)	$1$q$2	2		0

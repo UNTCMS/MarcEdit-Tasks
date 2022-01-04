@@ -1,0 +1,12 @@
+#DESCRIPTION#Corrects punctuation in 264
+REPLACE	(=264.*\])\.$	$1	2		0
+REPLACE	(=264  .1.*[^\]\.]$)	$1.	2		0
+REPLACE	(=264  .1.*[^,])(\$c)	$1,$2	2		0
+REPLACE	(=264.*)\s(,)	$1$2	2		0
+REPLACE	(=264  .1.*);(\$b)	$1:$2	2		0
+REPLACE	(=264  .1.*[^:])(\$b)	$1:$2	2		0
+REPLACE	(=264  .1.*\S)(:\$b)	$1 $2	2		0
+REPLACE	(=264  .1\$a.*),\s(\$a)	$1 ;$2	2		0
+REPLACE	(=264  .1\$a.*;)\s(.*\$b)	$1$a$2	2		0
+REPLACE	(=264  .1\$a.*[^;])(\$a)	$1;$2	2		0
+REPLACE	(=264  .1\$a.*\S)(;\$a)	$1 $2	2		0
