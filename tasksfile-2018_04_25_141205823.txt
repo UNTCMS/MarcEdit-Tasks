@@ -1,5 +1,0 @@
-#DESCRIPTION#Cleans up punctuation in 100
-REPLACE	(=100.*),(\$q.*)	$1$2	2		0
-REPLACE	(=100.*),(\$c\(.*)	$1$2	2		0
-REPLACE	(=100.*-),(\$e)	$1$2	2		0
-REPLACE	(=100.*[^,-])(\$e)	$1,$2	2		0

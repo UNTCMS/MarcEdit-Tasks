@@ -1,7 +1,0 @@
-#DESCRIPTION#Cleans up 245
-REPLACE	(=245.*[^\.]$)	$1.	2		0
-REPLACE	(=245  .*\s)\s	$1	2		0
-REPLACE	(=245.*\$c)\s	$1	2		0
-REPLACE	(=245.*[^/])(\$c)	$1/$2	2		0
-REPLACE	(=245.*\S)(/\$c)	$1 $2	2		0
-REPLACE	(=245.*\S)([;:=]\$b)	$1 $2	2		0
