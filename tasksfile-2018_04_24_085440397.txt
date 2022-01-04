@@ -1,3 +1,0 @@
-#DESCRIPTION#removes . then adds back if =490
-REPLACE	(^=300.*)\.$	$1	2		0
-REPLACE	(=300.*[^\.]$)	$1.	2	=490	1
